@@ -32,8 +32,25 @@ function App() {
 }
 
 const Home = () => {
+  const backgroundImage = "/fondo.jpg";
+
   return (
-    <Container className="text-center mt-5">
+    <Container
+      fluid
+      className="text-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        marginTop: 0,
+        paddingTop: 56,
+        color: 'white', // Color del texto blanco
+      }}
+    >
       <div>
         <h2 className="mb-3">Home</h2>
         <p className="lead">Bienvenido a la página de inicio.</p>
@@ -45,5 +62,8 @@ const Home = () => {
     </Container>
   );
 };
+
+
+
 
 export default App;
