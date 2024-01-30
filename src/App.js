@@ -10,6 +10,7 @@ import Gamedesign from './components/GameDesign';
 import Musica from './components/Musica';
 import Art from './components/ObrasdeArte';
 import Products from './components/ProductsMarca';
+import Login from './components/login';
 import { Container, Button } from 'react-bootstrap';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/musica" element={<Musica />} />
         <Route path="/art" element={<Art />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
